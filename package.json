@@ -1,16 +1,25 @@
 {
-  "name": "continuous-integration",
+  "name": "static-type-checking",
   "version": "1.0.0",
   "license": "CC-BY-NC-ND-4.0",
   "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
     "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "jest": "^27.0.4",
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.1",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.2"
   },
   "scripts": {
     "lint": "eslint src",
     "format": "prettier --write src",
     "format:check": "prettier --check src",
-    "test": "jest"
+    "test": "jest",
+    "test:types": "tsc --noEmit",
+    "test:watch": "jest --watchAll"
   }
 }

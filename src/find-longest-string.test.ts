@@ -1,5 +1,5 @@
 // import function from local file
-const findLongestString = require("./find-longest-string");
+import findLongestString from "./find-longest-string";
 
 test("findLongestString finds the longest string in an array", () => {
   expect(findLongestString(["it", "is", "a", "nice", "day"])).toBe("nice");

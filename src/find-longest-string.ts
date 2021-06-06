@@ -1,13 +1,11 @@
-"use strict";
-
 /**
  * Find the longest string in an array.
  * In the case of a tie, returns the earlier string in the array.
  *
- * @param {string[]} stringArr - array of strings
- * @returns {string} - the longest string
+ * @param stringArr - array of strings
+ * @returns the longest string
  */
-function findLongestString(stringArr) {
+function findLongestString(stringArr: string[]): string {
   let longestString = stringArr[0];
   for (let str of stringArr) {
     if (str.length > longestString.length) {
@@ -18,4 +16,4 @@ function findLongestString(stringArr) {
 }
 
 // export function so it can be used in test file
-module.exports = findLongestString;
+export default findLongestString;
