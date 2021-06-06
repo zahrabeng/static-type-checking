@@ -17,6 +17,5 @@ function findLongestString(stringArr) {
   return longestString;
 }
 
-console.log(findLongestString(["it", "is", "a", "nice", "day"]), "nice");
-console.log(findLongestString(["why", "hello", "to", "you"]), "hello");
-console.log(findLongestString(["brave", "dance"]), "brave");
+// export function so it can be used in test file
+module.exports = findLongestString;
